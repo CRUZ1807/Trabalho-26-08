@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validação dos dados"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:" />
+
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:" />
+
+    <TextView
+        android:id="@+id/tvCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF:" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail:" />
+</LinearLayout>
+<application
+    ... >
+    <activity android:name=".ValidacaoActivity"></activity>
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
